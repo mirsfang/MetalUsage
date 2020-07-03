@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63C54FBD249A3AAD00AC1C1E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C54FBC249A3AAD00AC1C1E /* AppDelegate.m */; };
+		63C54FC0249A3AAD00AC1C1E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C54FBF249A3AAD00AC1C1E /* SceneDelegate.m */; };
+		63C54FC3249A3AAD00AC1C1E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C54FC2249A3AAD00AC1C1E /* ViewController.m */; };
+		63C54FC6249A3AAD00AC1C1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63C54FC4249A3AAD00AC1C1E /* Main.storyboard */; };
+		63C54FC8249A3AAE00AC1C1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63C54FC7249A3AAE00AC1C1E /* Assets.xcassets */; };
+		63C54FCB249A3AAE00AC1C1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63C54FC9249A3AAE00AC1C1E /* LaunchScreen.storyboard */; };
+		63C54FCE249A3AAE00AC1C1E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C54FCD249A3AAE00AC1C1E /* main.m */; };
+		63C54FD8249A3AAE00AC1C1E /* textureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C54FD7249A3AAE00AC1C1E /* textureTests.m */; };
+		63C54FE3249A3AAE00AC1C1E /* textureUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63C54FE2249A3AAE00AC1C1E /* textureUITests.m */; };
+		63C54FF2249A3C0800AC1C1E /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C54FF1249A3C0800AC1C1E /* Metal.framework */; };
+		63C54FF4249A3C1300AC1C1E /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C54FF3249A3C1300AC1C1E /* MetalKit.framework */; };
+		63C54FF7249A480700AC1C1E /* Shader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 63C54FF6249A480700AC1C1E /* Shader.metal */; };
+		63C54FF8249A4ACD00AC1C1E /* ShaderType.h in Sources */ = {isa = PBXBuildFile; fileRef = 63C54FF5249A474300AC1C1E /* ShaderType.h */; };
+		63C54FFA249A4ADD00AC1C1E /* test.png in Sources */ = {isa = PBXBuildFile; fileRef = 63C54FF9249A4ADD00AC1C1E /* test.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		63C54FD4249A3AAE00AC1C1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63C54FB0249A3AAD00AC1C1E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63C54FB7249A3AAD00AC1C1E;
+			remoteInfo = texture;
+		};
+		63C54FDF249A3AAE00AC1C1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63C54FB0249A3AAD00AC1C1E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63C54FB7249A3AAD00AC1C1E;
+			remoteInfo = texture;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		63C54FB8249A3AAD00AC1C1E /* texture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = texture.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63C54FBB249A3AAD00AC1C1E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		63C54FBC249A3AAD00AC1C1E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		63C54FBE249A3AAD00AC1C1E /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		63C54FBF249A3AAD00AC1C1E /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		63C54FC1249A3AAD00AC1C1E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		63C54FC2249A3AAD00AC1C1E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		63C54FC5249A3AAD00AC1C1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		63C54FC7249A3AAE00AC1C1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63C54FCA249A3AAE00AC1C1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		63C54FCC249A3AAE00AC1C1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63C54FCD249A3AAE00AC1C1E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		63C54FD3249A3AAE00AC1C1E /* textureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = textureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63C54FD7249A3AAE00AC1C1E /* textureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = textureTests.m; sourceTree = "<group>"; };
+		63C54FD9249A3AAE00AC1C1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63C54FDE249A3AAE00AC1C1E /* textureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = textureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63C54FE2249A3AAE00AC1C1E /* textureUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = textureUITests.m; sourceTree = "<group>"; };
+		63C54FE4249A3AAE00AC1C1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63C54FF1249A3C0800AC1C1E /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		63C54FF3249A3C1300AC1C1E /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		63C54FF5249A474300AC1C1E /* ShaderType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderType.h; sourceTree = "<group>"; };
+		63C54FF6249A480700AC1C1E /* Shader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shader.metal; sourceTree = "<group>"; };
+		63C54FF9249A4ADD00AC1C1E /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63C54FB5249A3AAD00AC1C1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63C54FF4249A3C1300AC1C1E /* MetalKit.framework in Frameworks */,
+				63C54FF2249A3C0800AC1C1E /* Metal.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63C54FD0249A3AAE00AC1C1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63C54FDB249A3AAE00AC1C1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63C54FAF249A3AAD00AC1C1E = {
+			isa = PBXGroup;
+			children = (
+				63C54FBA249A3AAD00AC1C1E /* texture */,
+				63C54FD6249A3AAE00AC1C1E /* textureTests */,
+				63C54FE1249A3AAE00AC1C1E /* textureUITests */,
+				63C54FB9249A3AAD00AC1C1E /* Products */,
+				63C54FF0249A3C0800AC1C1E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		63C54FB9249A3AAD00AC1C1E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63C54FB8249A3AAD00AC1C1E /* texture.app */,
+				63C54FD3249A3AAE00AC1C1E /* textureTests.xctest */,
+				63C54FDE249A3AAE00AC1C1E /* textureUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63C54FBA249A3AAD00AC1C1E /* texture */ = {
+			isa = PBXGroup;
+			children = (
+				63C54FF9249A4ADD00AC1C1E /* test.png */,
+				63C54FBB249A3AAD00AC1C1E /* AppDelegate.h */,
+				63C54FBC249A3AAD00AC1C1E /* AppDelegate.m */,
+				63C54FBE249A3AAD00AC1C1E /* SceneDelegate.h */,
+				63C54FBF249A3AAD00AC1C1E /* SceneDelegate.m */,
+				63C54FC1249A3AAD00AC1C1E /* ViewController.h */,
+				63C54FC2249A3AAD00AC1C1E /* ViewController.m */,
+				63C54FC4249A3AAD00AC1C1E /* Main.storyboard */,
+				63C54FC7249A3AAE00AC1C1E /* Assets.xcassets */,
+				63C54FC9249A3AAE00AC1C1E /* LaunchScreen.storyboard */,
+				63C54FCC249A3AAE00AC1C1E /* Info.plist */,
+				63C54FCD249A3AAE00AC1C1E /* main.m */,
+				63C54FF5249A474300AC1C1E /* ShaderType.h */,
+				63C54FF6249A480700AC1C1E /* Shader.metal */,
+			);
+			path = texture;
+			sourceTree = "<group>";
+		};
+		63C54FD6249A3AAE00AC1C1E /* textureTests */ = {
+			isa = PBXGroup;
+			children = (
+				63C54FD7249A3AAE00AC1C1E /* textureTests.m */,
+				63C54FD9249A3AAE00AC1C1E /* Info.plist */,
+			);
+			path = textureTests;
+			sourceTree = "<group>";
+		};
+		63C54FE1249A3AAE00AC1C1E /* textureUITests */ = {
+			isa = PBXGroup;
+			children = (
+				63C54FE2249A3AAE00AC1C1E /* textureUITests.m */,
+				63C54FE4249A3AAE00AC1C1E /* Info.plist */,
+			);
+			path = textureUITests;
+			sourceTree = "<group>";
+		};
+		63C54FF0249A3C0800AC1C1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63C54FF3249A3C1300AC1C1E /* MetalKit.framework */,
+				63C54FF1249A3C0800AC1C1E /* Metal.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63C54FB7249A3AAD00AC1C1E /* texture */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63C54FE7249A3AAE00AC1C1E /* Build configuration list for PBXNativeTarget "texture" */;
+			buildPhases = (
+				63C54FB4249A3AAD00AC1C1E /* Sources */,
+				63C54FB5249A3AAD00AC1C1E /* Frameworks */,
+				63C54FB6249A3AAD00AC1C1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = texture;
+			productName = texture;
+			productReference = 63C54FB8249A3AAD00AC1C1E /* texture.app */;
+			productType = "com.apple.product-type.application";
+		};
+		63C54FD2249A3AAE00AC1C1E /* textureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63C54FEA249A3AAE00AC1C1E /* Build configuration list for PBXNativeTarget "textureTests" */;
+			buildPhases = (
+				63C54FCF249A3AAE00AC1C1E /* Sources */,
+				63C54FD0249A3AAE00AC1C1E /* Frameworks */,
+				63C54FD1249A3AAE00AC1C1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63C54FD5249A3AAE00AC1C1E /* PBXTargetDependency */,
+			);
+			name = textureTests;
+			productName = textureTests;
+			productReference = 63C54FD3249A3AAE00AC1C1E /* textureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		63C54FDD249A3AAE00AC1C1E /* textureUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63C54FED249A3AAE00AC1C1E /* Build configuration list for PBXNativeTarget "textureUITests" */;
+			buildPhases = (
+				63C54FDA249A3AAE00AC1C1E /* Sources */,
+				63C54FDB249A3AAE00AC1C1E /* Frameworks */,
+				63C54FDC249A3AAE00AC1C1E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63C54FE0249A3AAE00AC1C1E /* PBXTargetDependency */,
+			);
+			name = textureUITests;
+			productName = textureUITests;
+			productReference = 63C54FDE249A3AAE00AC1C1E /* textureUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63C54FB0249A3AAD00AC1C1E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = mirsfang;
+				TargetAttributes = {
+					63C54FB7249A3AAD00AC1C1E = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					63C54FD2249A3AAE00AC1C1E = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 63C54FB7249A3AAD00AC1C1E;
+					};
+					63C54FDD249A3AAE00AC1C1E = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 63C54FB7249A3AAD00AC1C1E;
+					};
+				};
+			};
+			buildConfigurationList = 63C54FB3249A3AAD00AC1C1E /* Build configuration list for PBXProject "texture" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 63C54FAF249A3AAD00AC1C1E;
+			productRefGroup = 63C54FB9249A3AAD00AC1C1E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63C54FB7249A3AAD00AC1C1E /* texture */,
+				63C54FD2249A3AAE00AC1C1E /* textureTests */,
+				63C54FDD249A3AAE00AC1C1E /* textureUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63C54FB6249A3AAD00AC1C1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63C54FCB249A3AAE00AC1C1E /* LaunchScreen.storyboard in Resources */,
+				63C54FC8249A3AAE00AC1C1E /* Assets.xcassets in Resources */,
+				63C54FC6249A3AAD00AC1C1E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63C54FD1249A3AAE00AC1C1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63C54FDC249A3AAE00AC1C1E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63C54FB4249A3AAD00AC1C1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63C54FFA249A4ADD00AC1C1E /* test.png in Sources */,
+				63C54FF8249A4ACD00AC1C1E /* ShaderType.h in Sources */,
+				63C54FC3249A3AAD00AC1C1E /* ViewController.m in Sources */,
+				63C54FBD249A3AAD00AC1C1E /* AppDelegate.m in Sources */,
+				63C54FCE249A3AAE00AC1C1E /* main.m in Sources */,
+				63C54FF7249A480700AC1C1E /* Shader.metal in Sources */,
+				63C54FC0249A3AAD00AC1C1E /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63C54FCF249A3AAE00AC1C1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63C54FD8249A3AAE00AC1C1E /* textureTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63C54FDA249A3AAE00AC1C1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63C54FE3249A3AAE00AC1C1E /* textureUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		63C54FD5249A3AAE00AC1C1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63C54FB7249A3AAD00AC1C1E /* texture */;
+			targetProxy = 63C54FD4249A3AAE00AC1C1E /* PBXContainerItemProxy */;
+		};
+		63C54FE0249A3AAE00AC1C1E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63C54FB7249A3AAD00AC1C1E /* texture */;
+			targetProxy = 63C54FDF249A3AAE00AC1C1E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		63C54FC4249A3AAD00AC1C1E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63C54FC5249A3AAD00AC1C1E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		63C54FC9249A3AAE00AC1C1E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63C54FCA249A3AAE00AC1C1E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		63C54FE5249A3AAE00AC1C1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		63C54FE6249A3AAE00AC1C1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		63C54FE8249A3AAE00AC1C1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 925Y27JY8Q;
+				INFOPLIST_FILE = texture/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mirs.triangle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		63C54FE9249A3AAE00AC1C1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 925Y27JY8Q;
+				INFOPLIST_FILE = texture/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mirs.triangle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		63C54FEB249A3AAE00AC1C1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 925Y27JY8Q;
+				INFOPLIST_FILE = textureTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mirs.texture.textureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/texture.app/texture";
+			};
+			name = Debug;
+		};
+		63C54FEC249A3AAE00AC1C1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 925Y27JY8Q;
+				INFOPLIST_FILE = textureTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mirs.texture.textureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/texture.app/texture";
+			};
+			name = Release;
+		};
+		63C54FEE249A3AAE00AC1C1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 925Y27JY8Q;
+				INFOPLIST_FILE = textureUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mirs.texture.textureUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = texture;
+			};
+			name = Debug;
+		};
+		63C54FEF249A3AAE00AC1C1E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 925Y27JY8Q;
+				INFOPLIST_FILE = textureUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mirs.texture.textureUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = texture;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63C54FB3249A3AAD00AC1C1E /* Build configuration list for PBXProject "texture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63C54FE5249A3AAE00AC1C1E /* Debug */,
+				63C54FE6249A3AAE00AC1C1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63C54FE7249A3AAE00AC1C1E /* Build configuration list for PBXNativeTarget "texture" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63C54FE8249A3AAE00AC1C1E /* Debug */,
+				63C54FE9249A3AAE00AC1C1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63C54FEA249A3AAE00AC1C1E /* Build configuration list for PBXNativeTarget "textureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63C54FEB249A3AAE00AC1C1E /* Debug */,
+				63C54FEC249A3AAE00AC1C1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63C54FED249A3AAE00AC1C1E /* Build configuration list for PBXNativeTarget "textureUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63C54FEE249A3AAE00AC1C1E /* Debug */,
+				63C54FEF249A3AAE00AC1C1E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 63C54FB0249A3AAD00AC1C1E /* Project object */;
+}
